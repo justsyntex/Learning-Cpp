@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 int main()
 {
 	int x;
@@ -17,5 +16,5 @@ int main()
 	else
 		cout << "\nOdd\n\n";
 
-    system("pause");
+	system("pause");
 }

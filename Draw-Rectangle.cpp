@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 int main()
 {
 	int w, h;
@@ -15,7 +14,7 @@ int main()
 	cout << "Write the height: ";
 	cin >> h;
 
-    cout << endl;
+	cout << endl;
 
 	for (int j = 0; j < h; j++)
 	{
@@ -26,5 +25,5 @@ int main()
 		cout << endl;
 	}
 
-    system("pause");
+	system("pause");
 }
