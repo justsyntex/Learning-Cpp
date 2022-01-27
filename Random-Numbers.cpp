@@ -9,32 +9,27 @@ int main()
 {
     srand(time(NULL));
 
-    const int SIZE = 10;
-    int arr[SIZE];
+	const short SIZE = 10;
+	short a[SIZE];
 
-    bool alreadyThere;
+	for (short i = 0; i < SIZE; i++)
+	{
+		a[i] = rand() % 20;
 
-    for (int i = 0; i < SIZE;)
-    {
-        alreadyThere = false;
-        int newRandomValue = rand() % 20;
+		for (short t = 0; t < i; t++)
+		{
+			if (a[i] == a[t])
+			{
+				i--;
+				break;
+			}
+		}
+	}
 
-        for (int j = 0; j < i; j++)
-        {
-            if (arr[j] == newRandomValue)
-            {
-                alreadyThere = true;
-                break;
-            }
-        }
-
-        if (!alreadyThere)
-        {
-            arr[i] = newRandomValue;
-            cout << arr[i] << endl;
-            i++;
-        }
-    }
+	for (short i = 0; i < SIZE; i++)
+	{
+		cout << a[i] << endl;
+	}
 
     system("pause");
 }
